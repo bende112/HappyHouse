@@ -44,6 +44,17 @@ const MenuData = [
 
 export default function OurMenu () {
   const settings = {
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 700,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    cssEese: "Linear",
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    pauseOnFocus: true,
     cssEase: "linear",
     pauseOnHover: true,
     pauseOnFocus: true,
@@ -57,14 +68,6 @@ export default function OurMenu () {
       },
       {
         breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        initialSlide: 2,
-      },
-    },
-    {
-      breakpoint: 1024,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -112,7 +115,9 @@ export default function OurMenu () {
             <div className="flex flex-col items-center gap-4">
               <div className="space-y-3 text-center">
                 <h1 className="text-xl">{menu.name}</h1>
-                <p className="text-3xl font-semibold">{menu.price}</p>
+                <p className="text-3xl font-semibold">
+                  <span className="text-2xl font-cursive">only</span>
+                  {menu.price}</p>
                 <a href="#" className="underline">Buy Now
                 </a>
               </div>

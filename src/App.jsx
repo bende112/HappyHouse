@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Banner from "./components/Banner/Banner";
 import OurMenu from "./components/OurMenu/OurMenu";
+import Comments from "./components/Comments/Comments";
 
 export default function App () {
   return (
@@ -12,6 +13,7 @@ export default function App () {
       <Hero />
       <Banner />
       <OurMenu />
+      <Comments />
 
     </main>
   );
