@@ -52,9 +52,6 @@ export default function Comments () {
       autoplaySpeed: 2000,
       pauseOnHover: true,
       pauseOnFocus: true,
-      cssEase: "linear",
-      pauseOnHover: true,
-      pauseOnFocus: true,
       responsive: [
         {
           breakpoint: 10000,
@@ -92,6 +89,7 @@ export default function Comments () {
           </div>
 
           { /* Slider section */}
+          <div data-aos="zoom-in">
           <Slider {...settings}>
   {
     CommentData.map((item) => (
@@ -110,11 +108,11 @@ export default function Comments () {
           <p className="text-black/20 text-9xl font-serif absolute top-0 right-0">,,</p>
         </div>
       </div>
-
     ))
   }
           </Slider>
 
+        </div>
         </div>
       </div>
     );

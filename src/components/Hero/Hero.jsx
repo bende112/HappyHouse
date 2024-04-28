@@ -10,20 +10,27 @@ export default function Hero () {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
       {/* text content section*/}
       <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center">
-        <h1 className="text-8xl lg:text-[5rem]
+        <h1 data-aos="zoom-out"
+        data-aos-delay="200"
+        className="text-8xl lg:text-[5rem]
         font-bold bg-clip-text text-transparent
         bg-gradient-to-b from-primary to-primary font-cursive">
           Welcome to Our fantastic page</h1>
         <span className="text-3xl font-sans text-dark">Bowl</span>
-        <p className="text-sm text-dark font-sans">
-          {" An Athentic fussion of Senegal, Cameroon and Best of the world cousin"}
+        <p data-aos="fade" data-aos-delay="300"
+        className="text-sm text-dark font-sans">
+          {" "}
+          An Athentic fussion of Senegal, Cameroon and Best of the world cousin
         </p>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="400" data-aos-offset="0">
           <button className="primary-btn">See Our Menu</button>
         </div>
       </div>
       {/* image section*/}
-      <div className="min-h-[450px] flex justify-center items-center order-1 sm:order-2">
+      <div data-aos="zoom-in"
+      data-aos-delay="500"
+      data-aos-offset="0"
+      className="min-h-[450px] flex justify-center items-center order-1 sm:order-2">
         <img src={beefSteak} className="max-w-[450px] w-full mx-auto sm:scale-125 shadow-1" />
         {/* <img src={restaurantbar} className="max-w-[450px] w-full mx-auto sm:scale-125 shadow-1" /> */}
         {/* <div className="bg-primary p-3 rounded-xl absolute top-10 left-10 hidden md:block text-white">

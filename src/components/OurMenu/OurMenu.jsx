@@ -55,9 +55,6 @@ export default function OurMenu () {
     autoplaySpeed: 3000,
     pauseOnHover: true,
     pauseOnFocus: true,
-    cssEase: "linear",
-    pauseOnHover: true,
-    pauseOnFocus: true,
     responsive: [
       {
         breakpoint: 10000,
@@ -89,7 +86,9 @@ export default function OurMenu () {
     <div className="container">
       { /* Header section */}
       <div className="mb-10 space-y-5">
-        <h1 className="text-center text-4xl font-bold"> Our Menu</h1>
+        <h1 data-aos="fade-up"
+        data-aos-delay="200"
+        className="text-center text-4xl font-bold"> Our Menu</h1>
         <div className="text-center sm:max-w-sm mx-auto text-xs opacity-75">
           {"  "}
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -100,7 +99,7 @@ export default function OurMenu () {
       </div>
 
       { /* Slider section */}
-      <div>
+      <div data-aos="zoom-in">
         <Slider {...settings}>
     {
       MenuData.map((menu)=> (
